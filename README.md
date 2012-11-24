@@ -12,4 +12,12 @@ Then, in Aptana Studio:
 
 	Commands -> Bundle Development -> Update User Bundles
 	
+To test it is working, in Aptana, open a PHP file and type:  
+
+	$sql
+	
+...and then press ctrl-spacebar. It should replace it with:   
+
+	$sql = e107::getDb();
+	
 
