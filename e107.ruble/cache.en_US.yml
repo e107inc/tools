@@ -8,7 +8,7 @@ children:
     prefix_values: [e107]
   description: null
   displayName: e107 - $nS Tablerender()
-  expansion: e107::getRender()->tablerender($caption, $emessage->render().$text);
+  expansion: e107::getRender()->tablerender($caption, $mes->render().$text);
   iconPath: null
   input: [none]
   inputPath: null
@@ -100,6 +100,25 @@ children:
   async: false
   category: null
   customProperties:
+    prefix_values: [$ue]
+  description: null
+  displayName: e107 - $ue Object
+  expansion: \$ue = e107::getUserExt();
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: bundle.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
     prefix_values: [$fl]
   description: null
   displayName: e107 - $fl Object
@@ -157,6 +176,25 @@ children:
   async: false
   category: null
   customProperties:
+    prefix_values: [$log]
+  description: null
+  displayName: e107 - $admin_log Object
+  expansion: \$log = e107::getAdminLog();
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: bundle.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
     prefix_values: [e107]
   description: null
   displayName: e107 - eMessage - ERROR
@@ -179,7 +217,7 @@ children:
     prefix_values: [esel]
   description: null
   displayName: e107 - $sql Select
-  expansion: \$sql->db_Select('${1:// table}', '${2:// fields}', '${3:// where}');
+  expansion: \$sql->select('${1:// table}', '${2:// fields}', '${3:// where}');
   iconPath: null
   input: [none]
   inputPath: null
