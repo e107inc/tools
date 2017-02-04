@@ -5,7 +5,7 @@ Various tools to help with e107 development
 
 ## PHPStorm (preferred)
 
-codeformatting.xml - still not perfect. Empty spaces before and after if/while/switch would be better.
+`codeformatting.xml` - still not perfect. Empty spaces before and after if/while/switch would be better.
 
 ## Aptana (may be outdated)
 
